@@ -20,8 +20,12 @@
 ───────────────────────────────────────────── */
 
 .site {
+  position: relative;
+
   min-height: 100vh;
+
   overflow-x: hidden;
+
   background:
     radial-gradient(
       circle at 85% 10%,
@@ -34,6 +38,7 @@
       transparent 28%
     ),
     var(--midaway-cream);
+
   color: var(--midaway-text);
 }
 
@@ -42,6 +47,9 @@
 ───────────────────────────────────────────── */
 
 .header {
+  position: relative;
+  z-index: 1;
+
   width: min(calc(100% - 40px), var(--max-width));
   margin: 0 auto;
   padding: 22px 0;
@@ -56,21 +64,67 @@
 .brand {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 9px;
 
   color: var(--midaway-text);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 18px;
-  letter-spacing: 0.18em;
-  font-weight: 600;
 }
 
 .brand img {
   width: 54px;
-  height: 54px;
-  object-fit: contain;
+height: 54px;
+
   display: block;
+  object-fit: contain;
+
+  background: transparent;
+
+  mix-blend-mode: multiply;
 }
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.brand-main {
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 23px;
+  line-height: 0.95;
+
+  font-weight: 500;
+  letter-spacing: 0.13em;
+
+  color: var(--midaway-text);
+}
+
+.brand-sub {
+  margin-top: 5px;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 13px;
+  line-height: 1;
+
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+
+  color: var(--midaway-teal);
+}
+
+/* ─────────────────────────────────────────────
+   LANGUAGE SWITCH
+───────────────────────────────────────────── */
 
 .lang-switch {
   display: flex;
@@ -78,13 +132,16 @@
   gap: 5px;
 
   padding: 4px;
+
   border: 1px solid var(--midaway-line);
   border-radius: 999px;
+
   background: rgba(255, 255, 255, 0.72);
 }
 
 .lang-switch button {
   min-width: 43px;
+
   padding: 8px 11px;
 
   border: 0;
@@ -99,6 +156,7 @@
   letter-spacing: 0.08em;
 
   cursor: pointer;
+
   transition:
     background 0.2s ease,
     color 0.2s ease,
@@ -119,11 +177,14 @@
 ───────────────────────────────────────────── */
 
 .hero {
+  position: relative;
+  z-index: 1;
+
   width: min(calc(100% - 40px), 980px);
-  min-height: 680px;
+  min-height: 620px;
 
   margin: 0 auto;
-  padding: 82px 0 100px;
+  padding: 38px 0 68px;
 
   display: flex;
   flex-direction: column;
@@ -133,31 +194,58 @@
   text-align: center;
 }
 
+.hero-symbol-wrap {
+  position: relative;
+
+  margin-bottom: 10px;
+
+  background: transparent;
+}
+
 .hero-logo {
-  width: clamp(150px, 20vw, 220px);
-  margin-bottom: 34px;
+  width: 240px;
+  height: auto;
+
   display: block;
+
+  margin: 0 auto;
+
+  background: transparent;
+
+  /*
+    Important:
+    imaginea actuală are alb în fișier.
+    Multiply îl contopește vizual cu fundalul crem.
+  */
   mix-blend-mode: multiply;
 }
 
 .eyebrow {
-  margin: 0 0 20px;
+  margin: 0 0 24px;
 
   color: var(--midaway-teal);
 
-  font-size: 13px;
-  font-weight: 800;
-  letter-spacing: 0.2em;
+  font-family: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+
+  letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-
 .hero h1 {
   max-width: 930px;
-  margin: 0;
 
-  font-family: Georgia, "Times New Roman", serif;
+  margin: 32px 0 0;
+
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-size: clamp(48px, 7vw, 88px);
   font-weight: 400;
+
   line-height: 0.98;
   letter-spacing: -0.035em;
 
@@ -195,7 +283,8 @@
   text-decoration: none;
   font-weight: 800;
 
-  box-shadow: 0 8px 24px rgba(139, 44, 52, 0.16);
+  box-shadow:
+    0 8px 24px rgba(139, 44, 52, 0.16);
 
   transition:
     transform 0.2s ease,
@@ -205,8 +294,11 @@
 
 .primary-button:hover {
   transform: translateY(-2px);
+
   background: #78242c;
-  box-shadow: 0 12px 30px rgba(139, 44, 52, 0.22);
+
+  box-shadow:
+    0 12px 30px rgba(139, 44, 52, 0.22);
 }
 
 /* ─────────────────────────────────────────────
@@ -214,7 +306,11 @@
 ───────────────────────────────────────────── */
 
 .section {
+  position: relative;
+  z-index: 1;
+
   width: min(calc(100% - 40px), var(--max-width));
+
   margin: 0 auto;
   padding: 110px 20px;
 
@@ -223,25 +319,34 @@
 
 .section h2 {
   max-width: 780px;
+
   margin: 0 auto 24px;
 
-  font-family: Georgia, "Times New Roman", serif;
+  font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
   font-size: clamp(36px, 5vw, 58px);
   font-weight: 400;
+
   line-height: 1.08;
 }
 
 .section p {
   max-width: 760px;
+
   margin: 0 auto;
 
   color: var(--midaway-muted);
+
   font-size: clamp(17px, 2vw, 20px);
   line-height: 1.8;
 }
 
 .section-soft {
   width: min(calc(100% - 40px), var(--max-width));
+
   margin-bottom: 90px;
 
   border: 1px solid var(--midaway-line);
@@ -255,7 +360,8 @@
     ),
     #fff;
 
-  box-shadow: 0 18px 55px rgba(43, 37, 34, 0.05);
+  box-shadow:
+    0 18px 55px rgba(43, 37, 34, 0.05);
 }
 
 /* ─────────────────────────────────────────────
@@ -264,6 +370,7 @@
 
 .section::before {
   content: "";
+
   display: block;
 
   width: 34px;
@@ -272,6 +379,7 @@
   margin: 0 auto 28px;
 
   border-radius: 999px;
+
   background: var(--midaway-gold);
 }
 
@@ -284,9 +392,12 @@
 ───────────────────────────────────────────── */
 
 .footer {
-  width: min(calc(100% - 40px), var(--max-width));
-  margin: 0 auto;
+  position: relative;
+  z-index: 1;
 
+  width: min(calc(100% - 40px), var(--max-width));
+
+  margin: 0 auto;
   padding: 34px 0 44px;
 
   display: flex;
@@ -297,22 +408,23 @@
   border-top: 1px solid var(--midaway-line);
 
   color: var(--midaway-muted);
+
   font-size: 13px;
 }
 
 /* ─────────────────────────────────────────────
-   RESPONSIVE
+   MOBILE
 ───────────────────────────────────────────── */
 
 @media (max-width: 760px) {
   .header {
     width: min(calc(100% - 28px), var(--max-width));
+
     padding: 16px 0;
   }
 
   .brand {
-    font-size: 14px;
-    letter-spacing: 0.12em;
+    gap: 5px;
   }
 
   .brand img {
@@ -320,34 +432,54 @@
     height: 44px;
   }
 
+  .brand-main {
+    font-size: 20px;
+  }
+
+  .brand-sub {
+    margin-top: 4px;
+
+    font-size: 12.5px;
+    letter-spacing: 0.2em;
+  }
+
   .hero {
     width: min(calc(100% - 30px), 980px);
+
     min-height: auto;
-    padding: 60px 0 78px;
+
+    padding:  18px 0 70px;
+  }
+
+  .hero-symbol-wrap {
+    margin-bottom: 6px;
   }
 
   .hero-logo {
-    width: 150px;
-    margin-bottom: 28px;
+    width: 200px;
   }
 
   .hero h1 {
     font-size: clamp(42px, 13vw, 64px);
+
     line-height: 1;
   }
 
   .lead {
     font-size: 18px;
+
     line-height: 1.65;
   }
 
   .section {
     width: min(calc(100% - 28px), var(--max-width));
+
     padding: 78px 16px;
   }
 
   .section-soft {
     margin-bottom: 55px;
+
     border-radius: 24px;
   }
 
@@ -359,4 +491,8 @@
 
     padding-bottom: 34px;
   }
+
+  .eyebrow{
+    font-size:34px;
+}
 }

@@ -40,16 +40,27 @@ function App() {
   return (
     <main className="site">
       <header className="header">
-      <div className="brand">
-  <img src="/association-mark.png" alt="" />
-  <span>MIDAWAY</span>
-</div>
+        <div className="brand">
+          <img
+            src="/association-mark.png"
+            alt="Midaway"
+          />
 
-        <div className="lang-switch">
+          <div className="brand-text">
+            <span className="brand-main">MIDAWAY</span>
+            <span className="brand-sub">ASSOCIATION</span>
+          </div>
+        </div>
+
+        <div
+          className="lang-switch"
+          aria-label="Language selector"
+        >
           <button
             type="button"
             className={lang === "ro" ? "active" : ""}
             onClick={() => setLang("ro")}
+            aria-pressed={lang === "ro"}
           >
             RO
           </button>
@@ -58,6 +69,7 @@ function App() {
             type="button"
             className={lang === "en" ? "active" : ""}
             onClick={() => setLang("en")}
+            aria-pressed={lang === "en"}
           >
             EN
           </button>
@@ -65,11 +77,14 @@ function App() {
       </header>
 
       <section className="hero">
-      <img
-  src="/association-mark.png"
-  alt="Midaway"
-  className="hero-logo"
-/>
+        <div className="hero-symbol-wrap">
+          <img
+            src="/association-mark.png"
+            alt="Midaway"
+            className="hero-logo"
+          />
+        </div>
+
         <p className="eyebrow">{t.eyebrow}</p>
 
         <h1>{t.title}</h1>
@@ -93,7 +108,9 @@ function App() {
 
       <footer className="footer">
         <div>© 2026 Asociația Midaway</div>
-        <div>{t.contact}: contact@midaway.com</div>
+        <div>
+          {t.contact}: contact@midaway.com
+        </div>
       </footer>
     </main>
   );

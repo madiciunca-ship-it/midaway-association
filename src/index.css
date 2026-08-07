@@ -2,6 +2,8 @@
    MIDAWAY ASSOCIATION — GLOBAL FOUNDATION
 ───────────────────────────────────────────── */
 
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap");
+
 *,
 *::before,
 *::after {
@@ -11,12 +13,15 @@
 html {
   margin: 0;
   padding: 0;
+
   scroll-behavior: smooth;
+
   background: #fffaf3;
 }
 
 body {
   margin: 0;
+
   min-width: 320px;
   min-height: 100vh;
 
