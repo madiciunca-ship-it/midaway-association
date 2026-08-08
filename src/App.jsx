@@ -172,29 +172,29 @@ intro:
     startingTitle: "Where we begin",
 
     startingLead:
-      "We begin with a catalogue of 9 published titles, and we continue to build.",
+      "We begin with a catalogue of 9 published titles and continue to build.",
 
     startingText:
-      "New books are already in progress, and every story can open a new path: towards another language, another format, or another community.",
+      "New titles are already in development, and every story can open a new path: towards another language, another format, or another community.",
 
     realWorldTitle:
       "The real world is our source material.",
 
     realWorldText:
-      "Travel is not decoration for Midaway. It is one of the ways we discover stories, people, and connections that can become literature and cultural projects.",
+      "For Midaway, travel is more than a backdrop. It is one of the ways we discover stories, people, and connections that can become literature and cultural projects.",
 
     openAuthorsText:
-      "Midaway begins with its own publishing catalogue while remaining open to projects, authors, and voices that share the same cultural direction.",
+      "Midaway begins with its own publishing catalogue while remaining open to projects, authors, and voices that align with the same cultural vision.",
 
     projectTitle: "Midaway at Gaudeamus",
 
     projectLabel: "First project",
 
     projectText:
-      "We begin where everything begins for us: where books meet people. At Gaudeamus, we document the first moments of Midaway Association through images, video, conversations, and encounters that can become starting points for new projects.",
+      "We begin where it all starts for us: where books meet people. At Gaudeamus, we document the first moments of Midaway Association through images, video, conversations, and encounters that may become starting points for new projects.",
 
     projectMedia:
-      "Photographs, video moments, and stories from the event will be added here.",
+      "Photographs, video clips, and stories from the event will be added here.",
 
     modelTitle: "How Midaway works",
 
@@ -202,7 +202,7 @@ intro:
       "Midaway begins with stories and grows through people.",
 
     modelText:
-      "We develop the projects, materials, and infrastructure they need, then work with local partners so they can reach the communities for which they are intended.",
+      "We develop the projects, materials, and infrastructure they require, then work with local partners to bring them to the communities they are meant to serve.",
 
       modelFormula:
       "International coordination • Local partnerships • Community impact",
@@ -214,7 +214,7 @@ intro:
       "Libraries · Schools · Youth organisations · Cultural centres · International communities",
 
     circulation:
-      "We do not want a book merely to be published. We want to give it the possibility to keep circulating.",
+      "We do not want a book simply to be published. We want to help it keep circulating.",
 
     partnershipsTitle: "Partnerships",
 
@@ -222,7 +222,7 @@ intro:
       "A story travels further when people carry it forward.",
 
     partnershipsText:
-      "We collaborate with libraries, schools, organisations, translators, cultural professionals, communities, and people based in different parts of the world.",
+      "We collaborate with libraries, schools, organisations, translators, cultural professionals, communities, and people in different parts of the world.",
 
     partnershipsQuestion:
       "Do you represent a library, organisation, cultural institution, or community that could make use of these materials?",
@@ -239,12 +239,12 @@ intro:
       "A contribution can support the translation of a title, the production of an audiobook, books for a library or community, educational materials, or an intercultural project.",
 
     supportNote:
-      "Each project can be presented transparently, with a clear objective, progress, and concrete results.",
+      "Each project will be presented transparently, with a clear objective, progress updates, and tangible results.",
 
     visionTitle: "Beyond the book",
 
     visionLead:
-      "We begin with books, but we do not stop there.",
+      "We begin with books, but we go beyond them.",
 
     visionText:
       "Literature is our starting point for educational, cultural, and intercultural projects that connect people and communities.",
