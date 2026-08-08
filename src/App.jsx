@@ -132,18 +132,19 @@ titleLine2: "Ideile, și mai departe.",
     titleLine1: "Books can cross borders.",
 titleLine2: "Ideas can go even further.",
 
-    intro:
-      "Midaway Association builds bridges between literature, education, and communities, turning books and stories into projects that can travel across languages, formats, people, and cultures.",
+intro:
+     "Midaway Association builds bridges between literature, education, and communities, turning books and stories into projects that can travel across languages, formats, cultures, and communities.",
+     
 
     cta: "Learn more",
 
     whyTitle: "Why Midaway exists",
 
     whyLead:
-      "A book should not stop at the border of a language.",
+    "A book should not stop at the boundaries of a language.",
 
     whyText:
-      "A story can begin in a book and continue in another language, an audiobook, a library, a school, or a community thousands of kilometres away.",
+    "A story can begin in a book and find its way into another language, an audiobook, a library, a school, or a community thousands of kilometres away.",
 
     whyTextSecond:
       "Through translations, digital editions, audiobooks, book donations, and cultural partnerships, we want to make stories accessible to new communities.",
@@ -151,22 +152,22 @@ titleLine2: "Ideas can go even further.",
     whatTitle: "What we do",
 
     whatLead:
-      "We translate. We make accessible. We pass stories forward.",
+      "We translate • We make stories accessible • We carry them forward",
 
     translateTitle: "We translate",
 
     translateText:
       "We select Midaway titles and develop editions in other languages together with translators and cultural partners, so stories can travel beyond the language in which they were written.",
 
-    accessibleTitle: "We make accessible",
+    accessibleTitle: "We make stories accessible",
 
     accessibleText:
-      "We transform selected titles into audiobooks and digital formats so they can also reach people for whom the printed book is not the most accessible form of reading.",
-
-    forwardTitle: "We pass stories forward",
+    "We transform selected titles into audiobooks and digital formats so they can reach people for whom printed books are not the most accessible format.",
+    
+    forwardTitle: "We carry them forward",
 
     forwardText:
-      "We build partnerships with libraries, schools, cultural centres, and youth organisations, offering books and cultural materials to communities where they can open new conversations.",
+    "We build partnerships with libraries, schools, cultural centres, and youth organisations, offering books and cultural materials to communities where they can spark new conversations.",
 
     startingTitle: "Where we begin",
 
@@ -533,7 +534,7 @@ function App() {
 
       <footer className="footer">
         <div>
-          © 2026 Asociația Midaway
+          © 2026 ASOCIAȚIA MIDAWAY
         </div>
 
         <div>
