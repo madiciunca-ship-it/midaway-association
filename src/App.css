@@ -54,9 +54,10 @@
   margin: 0 auto;
   padding: 22px 0;
 
-  display: flex;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
   align-items: center;
-  justify-content: space-between;
+  gap: 28px;
 
   border-bottom: 1px solid rgba(234, 223, 213, 0.8);
 }
@@ -120,6 +121,61 @@ height: 54px;
   text-transform: uppercase;
 
   color: var(--midaway-teal);
+}
+
+.header-brand {
+  justify-self: start;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+}
+
+.header-nav a {
+  color: var(--midaway-text);
+  text-decoration: none;
+
+  font-family:
+    "Cormorant Garamond",
+    Georgia,
+    "Times New Roman",
+    serif;
+
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.header-nav a:hover {
+  color: var(--midaway-teal);
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.menu-toggle {
+  display: none;
+
+  border: 0;
+  background: transparent;
+
+  color: var(--midaway-text);
+
+  font-size: 26px;
+  line-height: 1;
+
+  cursor: pointer;
 }
 
 /* ─────────────────────────────────────────────
@@ -547,10 +603,29 @@ margin: 0 auto 14px;
 ───────────────────────────────────────────── */
 
 @media (max-width: 760px) {
+
   .header {
     width: min(calc(100% - 28px), var(--max-width));
-
     padding: 16px 0;
+  
+    grid-template-columns: auto 1fr auto;
+    gap: 10px;
+  }
+ 
+  .header-nav {
+    display: none;
+  }
+  
+  .header-actions {
+    justify-self: end;
+  }
+  
+  .menu-toggle {
+    display: block;
+  }
+  
+  .lang-switch {
+    justify-self: center;
   }
 
   .brand {
