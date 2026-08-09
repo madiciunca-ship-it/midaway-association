@@ -39,7 +39,7 @@ export const homeContent = {
       forwardTitle: "Dăm mai departe",
   
       forwardText:
-        "Construim parteneriate cu biblioteci, școli, centre culturale și organizații pentru tineri și oferim cărți și materiale culturale comunităților în care pot deschide conversații noi.",
+        "Construim parteneriate cu biblioteci, școli, centre culturale și organizații pentru tineri și ducem cărți și materiale culturale în comunități unde pot deschide conversații noi.",
   
       startingTitle: "De unde pornim",
   
