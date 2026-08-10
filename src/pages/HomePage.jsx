@@ -229,7 +229,7 @@ function HomePage() {
   
           <div>
             {t.contact}:{" "}
-            contact@midaway.com
+            office@midaway.com
           </div>
         </footer>
         </>
