@@ -1,13 +1,16 @@
 import { Outlet } from "react-router-dom";
-import Header from "./Header.jsx";
+import Header from "./Header";
+import PageArrows from "./PageArrows";
 
 function SiteLayout() {
   return (
-    <main className="site">
+    <>
       <Header />
 
       <Outlet />
-    </main>
+
+      <PageArrows />
+    </>
   );
 }
 

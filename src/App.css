@@ -637,6 +637,143 @@ margin: 0 auto 14px;
   text-align: center;
   }
 
+/* =========================================
+   GAUDEAMUS PROJECT
+   ========================================= */
+
+   .gaudeamus-page {
+    width: 100%;
+  }
+  
+  .gaudeamus-hero {
+    padding: 110px 32px 120px;
+  }
+  
+  .gaudeamus-hero-inner {
+    width: min(1180px, 100%);
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .gaudeamus-eyebrow {
+    margin: 0 0 22px;
+    color: #e85d04;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 0.08em;
+  }
+  
+  .gaudeamus-title {
+    margin: 0 auto;
+    color: var(--midaway-text);
+    font-family: Georgia, serif;
+    font-size: clamp(58px, 7vw, 104px);
+    font-weight: 400;
+    line-height: 0.98;
+  }
+  
+  .gaudeamus-intro {
+    max-width: 900px;
+    margin: 38px auto 0;
+    color: var(--midaway-muted);
+    font-size: clamp(19px, 2vw, 24px);
+    line-height: 1.7;
+  }
+  
+  .gaudeamus-divider {
+    width: 48px;
+    height: 4px;
+    margin: 76px auto 34px;
+    border-radius: 999px;
+    background: #249c91;
+  }
+  
+  .gaudeamus-location {
+    margin: 0 0 22px;
+    color: #e85d04;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+  
+  .gaudeamus-manifesto {
+    max-width: 950px;
+    margin: 0 auto;
+    color: var(--midaway-text);
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 68px);
+    font-weight: 400;
+    line-height: 1.08;
+  }
+  
+  .gaudeamus-live-text {
+    max-width: 850px;
+    margin: 38px auto 0;
+    color: var(--midaway-muted);
+    font-size: clamp(18px, 1.8vw, 22px);
+    line-height: 1.75;
+  }
+
+/* =========================================
+   PAGE ARROWS
+   ========================================= */
+
+   .page-arrows {
+    position: fixed;
+    right: 24px;
+    bottom: 28px;
+    z-index: 50;
+  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .page-arrow {
+    width: 44px;
+    height: 44px;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid var(--midaway-line);
+    border-radius: 50%;
+  
+    background: rgba(255, 250, 243, 0.92);
+    color: var(--midaway-text);
+  
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    line-height: 1;
+  
+    cursor: pointer;
+  
+    box-shadow:
+      0 8px 24px rgba(43, 37, 34, 0.07);
+  
+    backdrop-filter: blur(8px);
+  
+    transition:
+      transform 0.2s ease,
+      color 0.2s ease,
+      border-color 0.2s ease,
+      background 0.2s ease;
+  }
+  
+  .page-arrow:hover {
+    transform: translateY(-2px);
+  
+    color: var(--midaway-teal);
+    border-color: rgba(42, 157, 143, 0.35);
+  
+    background: var(--midaway-cream);
+  }
+  
+  .page-arrow:active {
+    transform: translateY(0);
+  }
+
 /* ─────────────────────────────────────────────
    MOBILE
 ───────────────────────────────────────────── */
@@ -781,6 +918,61 @@ margin: 0 auto 14px;
     border-radius: 24px;
   }
 
+  .gaudeamus-hero {
+    padding: 64px 22px 80px;
+  }
+  
+  .gaudeamus-eyebrow {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+  
+  .gaudeamus-title {
+    font-size: clamp(46px, 14vw, 64px);
+    line-height: 1;
+  }
+  
+  .gaudeamus-intro {
+    margin-top: 26px;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+  
+  .gaudeamus-divider {
+    margin: 54px auto 28px;
+  }
+  
+  .gaudeamus-location {
+    margin-bottom: 18px;
+    font-size: 16px;
+  }
+  
+  .gaudeamus-manifesto {
+    font-size: clamp(34px, 10vw, 48px);
+    line-height: 1.08;
+  }
+  
+  .gaudeamus-live-text {
+    margin-top: 28px;
+    font-size: 18px;
+    line-height: 1.65;
+  }
+
+  .page-arrows {
+    right: 14px;
+    bottom: 18px;
+    gap: 8px;
+  }
+  
+  .page-arrow {
+    width: 40px;
+    height: 40px;
+  
+    font-size: 18px;
+  
+    background: rgba(255, 250, 243, 0.95);
+  }
+
   .footer {
     width: min(calc(100% - 28px), var(--max-width));
 
@@ -794,4 +986,175 @@ margin: 0 auto 14px;
     font-size:34px;
 }
 
+}
+
+/* =========================
+   GALLERY RAIL
+========================= */
+
+.gallery-rail-section {
+  width: 100%;
+  padding: 70px 0 100px;
+  overflow: hidden;
+}
+
+.gallery-rail {
+  display: flex;
+  gap: 22px;
+
+  width: 100%;
+
+  overflow-x: auto;
+  padding: 0 6vw 28px;
+
+  scroll-snap-type: x proximity;
+
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.gallery-rail::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-rail-item {
+  flex: 0 0 clamp(260px, 26vw, 420px);
+
+  margin: 0;
+
+  scroll-snap-align: start;
+}
+
+.gallery-rail-item img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  aspect-ratio: 4 / 5;
+
+  object-fit: cover;
+
+  border-radius: 28px;
+}
+
+.gallery-rail-item figcaption {
+  margin-top: 12px;
+  padding: 0 4px;
+
+  color: var(--midaway-muted);
+
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.gallery-rail-section {
+  position: relative;
+}
+
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transform: translateY(-50%);
+
+  border: 1px solid var(--midaway-line);
+  border-radius: 50%;
+
+  background: rgba(255, 250, 243, 0.94);
+  color: var(--midaway-text);
+
+  font-size: 20px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 24px rgba(43, 37, 34, 0.08);
+
+  backdrop-filter: blur(8px);
+
+  transition:
+  transform 0.2s ease,
+  color 0.2s ease,
+  border-color 0.2s ease,
+  opacity 0.22s ease;
+}
+
+.gallery-arrow:hover {
+  color: var(--midaway-teal);
+  border-color: rgba(42, 157, 143, 0.4);
+}
+
+.gallery-arrow-left {
+  left: 18px;
+}
+
+.gallery-arrow-right {
+  right: 18px;
+}
+
+.gallery-arrow.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-arrow.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gallery-arrow:disabled {
+  cursor: default;
+}
+
+/* GALLERY RAIL — MOBILE */
+
+@media (max-width: 760px) {
+
+  .gallery-rail-section {
+    padding: 42px 0 64px;
+  }
+
+  .gallery-rail {
+    gap: 14px;
+
+    padding: 0 16px 20px;
+  }
+
+  .gallery-rail-item {
+    flex: 0 0 68vw;
+  }
+
+  .gallery-rail-item img {
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 4 / 5;
+
+    border-radius: 20px;
+  }
+
+  .gallery-arrow {
+    width: 38px;
+    height: 38px;
+  
+    font-size: 17px;
+  }
+  
+  .gallery-arrow-left {
+    left: 8px;
+  }
+  
+  .gallery-arrow-right {
+    right: 8px;
+  }
 }
