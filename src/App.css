@@ -1158,3 +1158,312 @@ margin: 0 auto 14px;
     right: 8px;
   }
 }
+
+/* ========================================
+   PARTNERSHIPS
+======================================== */
+
+.partnerships-page {
+  background: #fffaf3;
+  color: #2b2522;
+}
+
+.partnerships-inner {
+  width: min(1180px, calc(100% - 96px));
+  margin: 0 auto;
+}
+
+/* HERO */
+
+.partnerships-hero {
+  padding: 110px 0 120px;
+}
+
+.partnerships-eyebrow {
+  margin: 0 0 30px;
+  color: #f05a00;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.partnerships-title {
+  max-width: 1050px;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3.2rem, 6vw, 6.3rem);
+  font-weight: 400;
+  line-height: 0.98;
+  letter-spacing: -0.045em;
+}
+
+.partnerships-intro {
+  max-width: 780px;
+  margin: 52px 0 0;
+  color: #6f6259;
+  font-size: 1.25rem;
+  line-height: 1.75;
+}
+
+/* GENERAL SECTIONS */
+
+.partnerships-section {
+  padding: 30px 0 130px;
+}
+
+.partnerships-divider {
+  width: 34px;
+  height: 3px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 56px;
+  border-radius: 999px;
+}
+
+.partnerships-divider.gold {
+  background: var(--midaway-gold);
+}
+
+.partnerships-divider.teal {
+  background: var(--midaway-teal);
+}
+
+.partnerships-section h2,
+.partnerships-final h2 {
+  max-width: 900px;
+  margin: 0 0 70px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.4rem, 4vw, 4.4rem);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+/* PARTNER GRID */
+
+.partnerships-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 90px;
+  row-gap: 0;
+}
+
+.partnership-item {
+  padding: 38px 0 42px;
+  border-top: 1px solid rgba(43, 37, 34, 0.14);
+}
+
+.partnership-item h3 {
+  margin: 0 0 16px;
+  color: #2a9d8f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.65rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.partnership-item p {
+  max-width: 490px;
+  margin: 0;
+  color: #6f6259;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+/* SECOND SECTION */
+
+.partnerships-soft {
+  padding-top: 110px;
+  background: rgba(42, 157, 143, 0.045);
+}
+
+/* FINAL CTA */
+
+.partnerships-final {
+  padding: 130px 0 150px;
+}
+
+.partnerships-final h2 {
+  max-width: 920px;
+  margin-bottom: 35px;
+}
+
+.partnerships-final p {
+  max-width: 650px;
+  margin: 0 0 42px;
+  color: #6f6259;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.partnerships-final .primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  border-radius: 999px;
+  background: #2a9d8f;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  transition:
+    transform 180ms ease,
+    background-color 180ms ease;
+}
+
+.partnerships-final .primary-button:hover {
+  background: #23877b;
+  transform: translateY(-2px);
+}
+
+/* TABLET */
+
+@media (max-width: 900px) {
+  .partnerships-inner {
+    width: min(100% - 48px, 1180px);
+  }
+
+  .partnerships-hero {
+    padding: 80px 0 95px;
+  }
+
+  .partnerships-grid {
+    column-gap: 48px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+  .partnerships-inner {
+    width: calc(100% - 40px);
+  }
+
+  .partnerships-hero {
+    padding: 65px 0 80px;
+  }
+
+  .partnerships-eyebrow {
+    margin-bottom: 22px;
+    font-size: 0.78rem;
+  }
+
+  .partnerships-title {
+    font-size: clamp(2.7rem, 13vw, 4.2rem);
+    line-height: 1;
+  }
+
+  .partnerships-intro {
+    margin-top: 35px;
+    font-size: 1.08rem;
+    line-height: 1.65;
+  }
+
+  .partnerships-section {
+    padding: 20px 0 90px;
+  }
+
+  .partnerships-soft {
+    padding-top: 80px;
+  }
+
+  .partnerships-divider {
+    margin-bottom: 36px;
+  }
+
+  .partnerships-section h2,
+  .partnerships-final h2 {
+    margin-bottom: 45px;
+    font-size: clamp(2.2rem, 10vw, 3.4rem);
+  }
+
+  .partnerships-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .partnership-item {
+    padding: 28px 0 32px;
+  }
+
+  .partnership-item h3 {
+    font-size: 1.45rem;
+  }
+
+  .partnerships-final {
+    padding: 90px 0 110px;
+  }
+}
+
+/* ========================================
+   PARTNERSHIPS — CENTER ALIGNMENT
+======================================== */
+
+/* HERO */
+
+.partnerships-hero .partnerships-inner {
+  text-align: center;
+}
+
+.partnerships-eyebrow {
+  text-align: center;
+}
+
+.partnerships-title {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.partnerships-intro {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* SECTION HEADERS */
+
+.partnerships-divider {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnerships-section h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+/* GRID
+   blocul este centrat, dar textele rămân
+   aliniate la stânga pentru lizibilitate
+*/
+
+.partnerships-grid {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnership-item {
+  text-align: left;
+}
+
+/* FINAL CTA */
+
+.partnerships-final .partnerships-inner {
+  text-align: center;
+}
+
+.partnerships-final h2 {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.partnerships-final p {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}

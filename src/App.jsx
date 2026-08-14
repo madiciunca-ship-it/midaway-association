@@ -9,6 +9,7 @@ import SiteLayout from "./components/SiteLayout.jsx";
 import HomePage from "./pages/HomePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import GaudeamusPage from "./pages/GaudeamusPage.jsx";
+import PartnershipsPage from "./pages/PartnershipsPage.jsx";
 
 function App() {
   return (
@@ -37,6 +38,11 @@ function App() {
             path="proiecte"
             element={<ProjectsPage />}
           />
+
+<Route
+  path="parteneriate"
+  element={<PartnershipsPage />}
+/>
 
           <Route
             path="proiecte/gaudeamus"
