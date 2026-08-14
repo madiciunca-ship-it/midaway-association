@@ -47,8 +47,10 @@
 ───────────────────────────────────────────── */
 
 .header {
-  position: relative;
-  z-index: 1;
+  position: sticky;
+top: 0;
+z-index: 1000;
+background: var(--midaway-cream);
 
   width: min(calc(100% - 40px), var(--max-width));
   margin: 0 auto;
@@ -800,6 +802,10 @@ margin: 0 auto 14px;
     display: flex;
     flex-direction: column;
     gap: 14px;
+
+    position: sticky;
+  top: 92px;
+  z-index: 1100;
   
     width: min(calc(100% - 28px), var(--max-width));
     margin: 0 auto;
