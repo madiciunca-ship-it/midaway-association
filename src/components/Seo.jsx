@@ -66,6 +66,12 @@ function Seo({
     );
 
     setMeta(
+        'meta[name="robots"]',
+        { name: "robots" },
+        "index, follow"
+      );
+
+    setMeta(
       'meta[property="og:title"]',
       { property: "og:title" },
       title
