@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
+import Seo from "../components/Seo.jsx";
 
 const projectsContent = {
   ro: {
@@ -31,6 +32,20 @@ function ProjectsPage() {
 
   return (
     <>
+    <Seo
+  lang={lang}
+  path="/proiecte"
+  title={
+    lang === "ro"
+      ? "Proiecte | Asociația Midaway"
+      : "Projects | Midaway Association"
+  }
+  description={
+    lang === "ro"
+      ? "Descoperă proiectele Asociației Midaway: inițiative editoriale, culturale și interculturale care duc poveștile mai departe."
+      : "Discover Midaway Association projects: editorial, cultural and intercultural initiatives designed to carry stories further."
+  }
+/>
       <section className="section projects-intro">
         <h1 className="page-title">
           {t.title}
