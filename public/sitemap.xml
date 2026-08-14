@@ -54,4 +54,32 @@
   <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/parteneriate" />
 </url>
 
+<url>
+  <loc>https://midaway.com/ro/contact</loc>
+  <xhtml:link
+    rel="alternate"
+    hreflang="ro"
+    href="https://midaway.com/ro/contact"
+  />
+  <xhtml:link
+    rel="alternate"
+    hreflang="en"
+    href="https://midaway.com/en/contact"
+  />
+</url>
+
+<url>
+  <loc>https://midaway.com/en/contact</loc>
+  <xhtml:link
+    rel="alternate"
+    hreflang="ro"
+    href="https://midaway.com/ro/contact"
+  />
+  <xhtml:link
+    rel="alternate"
+    hreflang="en"
+    href="https://midaway.com/en/contact"
+  />
+</url>
+
 </urlset>
