@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
+
+
+
 <urlset
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml"
@@ -38,4 +41,17 @@
     <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/proiecte/gaudeamus" />
     <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/proiecte/gaudeamus" />
   </url>
+
+  <url>
+  <loc>https://midaway.com/ro/parteneriate</loc>
+  <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/parteneriate" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/parteneriate" />
+</url>
+
+<url>
+  <loc>https://midaway.com/en/parteneriate</loc>
+  <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/parteneriate" />
+  <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/parteneriate" />
+</url>
+
 </urlset>
