@@ -19,32 +19,7 @@ const gaudeamusContent = {
     liveText:
       "Vom documenta lansări, întâlniri, conversații, imagini și momente de la fața locului — material viu din care pot porni proiectele viitoare ale Asociației Midaway.",
 
-    gallery: [
-      {
-        src: "/gaudeamus/test/01.JPEG",
-        alt: "Test galerie Gaudeamus 1",
-      },
-      {
-        src: "/gaudeamus/test/02.JPEG",
-        alt: "Test galerie Gaudeamus 2",
-      },
-      {
-        src: "/gaudeamus/test/03.JPEG",
-        alt: "Test galerie Gaudeamus 3",
-      },
-      {
-        src: "/gaudeamus/test/04.JPEG",
-        alt: "Test galerie Gaudeamus 4",
-      },
-      {
-        src: "/gaudeamus/test/05.JPEG",
-        alt: "Test galerie Gaudeamus 5",
-      },
-      {
-        src: "/gaudeamus/test/06.jpeg",
-        alt: "Test galerie Gaudeamus 6",
-      },
-    ],
+    gallery: [],
     story: [],
     videos: [],
     quotes: [],
@@ -126,10 +101,10 @@ function GaudeamusPage() {
         </section>
   
         {t.gallery.length > 0 && (
-          <section className="gaudeamus-gallery">
-            {/* GalleryRail va veni aici */}
-          </section>
-        )}
+  <section className="gaudeamus-gallery">
+    <GalleryRail items={t.gallery} />
+  </section>
+)}
   
         {t.story.length > 0 && (
           <section className="gaudeamus-story">
@@ -149,7 +124,7 @@ function GaudeamusPage() {
           </section>
         )}
   
-        <GalleryRail items={t.gallery} />
+        
       </main>
     </>
   );
