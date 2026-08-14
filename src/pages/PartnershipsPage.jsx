@@ -1,4 +1,7 @@
-import { useParams } from "react-router-dom";
+import {
+  Link,
+  useParams,
+} from "react-router-dom";
 import Seo from "../components/Seo.jsx";
 
 const partnershipsContent = {
@@ -258,12 +261,12 @@ function PartnershipsPage() {
               {t.finalText}
             </p>
 
-            <a
-              className="primary-button"
-              href="mailto:office@midaway.ro"
-            >
-              {t.cta}
-            </a>
+            <Link
+  to={`/${lang}/contact`}
+  className="primary-button"
+>
+  {t.cta}
+</Link>
           </div>
         </section>
       </main>

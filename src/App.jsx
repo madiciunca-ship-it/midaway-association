@@ -10,6 +10,7 @@ import HomePage from "./pages/HomePage.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import GaudeamusPage from "./pages/GaudeamusPage.jsx";
 import PartnershipsPage from "./pages/PartnershipsPage.jsx";
+import ContactPage from "./pages/ContactPage.jsx";
 
 function App() {
   return (
@@ -48,6 +49,11 @@ function App() {
             path="proiecte/gaudeamus"
             element={<GaudeamusPage />}
           />
+
+<Route
+  path="contact"
+  element={<ContactPage />}
+/>
         </Route>
       </Routes>
     </BrowserRouter>

@@ -54,6 +54,10 @@ function Header() {
           <a href={`/${lang}/parteneriate`}>
   {lang === "ro" ? "Parteneriate" : "Partnerships"}
 </a>
+
+<a href={`/${lang}/contact`}>
+  {lang === "ro" ? "Contact" : "Contact"}
+</a>
         </nav>
 
         <div className="header-actions">
@@ -115,6 +119,13 @@ function Header() {
   onClick={() => setMenuOpen(false)}
 >
   {lang === "ro" ? "Parteneriate" : "Partnerships"}
+</a>
+
+<a
+  href={`/${lang}/contact`}
+  onClick={() => setMenuOpen(false)}
+>
+  Contact
 </a>
         </nav>
       )}
