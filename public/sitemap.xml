@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
+>
+  <url>
+    <loc>https://midaway.com/ro</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en" />
+  </url>
+
+  <url>
+    <loc>https://midaway.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en" />
+  </url>
+
+  <url>
+    <loc>https://midaway.com/ro/proiecte</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/proiecte" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/proiecte" />
+  </url>
+
+  <url>
+    <loc>https://midaway.com/en/proiecte</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/proiecte" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/proiecte" />
+  </url>
+
+  <url>
+    <loc>https://midaway.com/ro/proiecte/gaudeamus</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/proiecte/gaudeamus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/proiecte/gaudeamus" />
+  </url>
+
+  <url>
+    <loc>https://midaway.com/en/proiecte/gaudeamus</loc>
+    <xhtml:link rel="alternate" hreflang="ro" href="https://midaway.com/ro/proiecte/gaudeamus" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://midaway.com/en/proiecte/gaudeamus" />
+  </url>
+</urlset>
