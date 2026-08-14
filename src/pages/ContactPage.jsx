@@ -46,7 +46,7 @@ contactPersonPhone: "+40 740 010 119",
 
     contactPersonLabel: "Contact person",
 
-contactPersonName: "NUMELE TĂU",
+contactPersonName: "Maria Magdalena CIUNCA",
 
 contactPersonRole:
   "President, Midaway Association",
