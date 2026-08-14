@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
 import GalleryRail from "../components/GalleryRail";
+import Seo from "../components/Seo.jsx";
 
 const gaudeamusContent = {
   ro: {
@@ -77,67 +78,80 @@ function GaudeamusPage() {
   const t = gaudeamusContent[lang] || gaudeamusContent.ro;
 
   return (
-    <main className="gaudeamus-page">
+    <>
+      <Seo
+        lang={lang}
+        path="/proiecte/gaudeamus"
+        title={
+          lang === "ro"
+            ? "Midaway la Gaudeamus | Asociația Midaway"
+            : "Midaway at Gaudeamus | Midaway Association"
+        }
+        description={
+          lang === "ro"
+            ? "Asociația Midaway la Gaudeamus Sibiu 2026: lansări, întâlniri, conversații, imagini și povești de la fața locului."
+            : "Midaway Association at Gaudeamus Sibiu 2026: launches, encounters, conversations, images and stories from the event."
+        }
+      />
   
-      <section className="gaudeamus-hero">
-        <div className="gaudeamus-hero-inner">
+      <main className="gaudeamus-page">
+        <section className="gaudeamus-hero">
+          <div className="gaudeamus-hero-inner">
+            <p className="gaudeamus-eyebrow">
+              {t.eyebrow}
+            </p>
   
-          <p className="gaudeamus-eyebrow">
-            {t.eyebrow}
-          </p>
+            <h1 className="gaudeamus-title">
+              {t.title}
+            </h1>
   
-          <h1 className="gaudeamus-title">
-            {t.title}
-          </h1>
+            <p className="gaudeamus-intro">
+              {t.intro}
+            </p>
   
-          <p className="gaudeamus-intro">
-            {t.intro}
-          </p>
+            <div className="gaudeamus-divider" />
   
-          <div className="gaudeamus-divider" />
+            <p className="gaudeamus-location">
+              {t.liveLabel}
+            </p>
   
-          <p className="gaudeamus-location">
-            {t.liveLabel}
-          </p>
+            <h2 className="gaudeamus-manifesto">
+              {t.liveTitle}
+            </h2>
   
-          <h2 className="gaudeamus-manifesto">
-            {t.liveTitle}
-          </h2>
-  
-          <p className="gaudeamus-live-text">
-            {t.liveText}
-          </p>
-  
-        </div>
-      </section>
-  
-      {t.gallery.length > 0 && (
-        <section className="gaudeamus-gallery">
-          {/* GalleryRail va veni aici */}
+            <p className="gaudeamus-live-text">
+              {t.liveText}
+            </p>
+          </div>
         </section>
-      )}
   
-      {t.story.length > 0 && (
-        <section className="gaudeamus-story">
-          {/* povestea va crește aici */}
-        </section>
-      )}
+        {t.gallery.length > 0 && (
+          <section className="gaudeamus-gallery">
+            {/* GalleryRail va veni aici */}
+          </section>
+        )}
   
-      {t.videos.length > 0 && (
-        <section className="gaudeamus-videos">
-          {/* video */}
-        </section>
-      )}
+        {t.story.length > 0 && (
+          <section className="gaudeamus-story">
+            {/* povestea va crește aici */}
+          </section>
+        )}
   
-      {t.quotes.length > 0 && (
-        <section className="gaudeamus-quotes">
-          {/* conversații / citate */}
-        </section>
-      )}
-
-      <GalleryRail items={t.gallery} />
-
-    </main>
+        {t.videos.length > 0 && (
+          <section className="gaudeamus-videos">
+            {/* video */}
+          </section>
+        )}
+  
+        {t.quotes.length > 0 && (
+          <section className="gaudeamus-quotes">
+            {/* conversații / citate */}
+          </section>
+        )}
+  
+        <GalleryRail items={t.gallery} />
+      </main>
+    </>
   );
 }
 
