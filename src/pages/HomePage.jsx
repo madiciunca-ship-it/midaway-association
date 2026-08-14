@@ -237,16 +237,7 @@ function HomePage() {
           </p>
         </section>
   
-        <footer className="footer">
-          <div>
-            © 2026 ASOCIAȚIA MIDAWAY
-          </div>
-  
-          <div>
-            {t.contact}:{" "}
-            office@midaway.com
-          </div>
-        </footer>
+        
         </>
     );
   }
