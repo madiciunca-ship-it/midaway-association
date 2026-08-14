@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { homeContent } from "../homeContent.js";
 import "../App.css";
+import Seo from "../components/Seo.jsx";
 
 function HomePage() {
     const { lang = "ro" } = useParams();
@@ -8,6 +9,20 @@ function HomePage() {
   
     return (
         <>
+        <Seo
+  lang={lang}
+  path="/"
+  title={
+    lang === "ro"
+      ? "Asociația Midaway | Literatură, educație și comunități"
+      : "Midaway Association | Literature, Education and Communities"
+  }
+  description={
+    lang === "ro"
+      ? "Asociația Midaway creează punți între literatură, educație și comunități, transformând cărțile și poveștile în proiecte care circulă între limbi, formate, oameni și culturi."
+      : "Midaway Association builds bridges between literature, education and communities, turning books and stories into projects that travel across languages, formats, people and cultures."
+  }
+/>
         <section className="hero">
           <div className="hero-symbol-wrap">
             <img
