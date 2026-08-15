@@ -1894,8 +1894,45 @@ margin: 0 auto 14px;
 }
 
 .support-iban {
+  appearance: none;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+  color: var(--midaway-ink);
+  cursor: pointer;
+
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+
+  text-align: left;
+}
+
+.support-iban-number {
   font-family: Georgia, "Times New Roman", serif;
+  font-size: 1rem;
   letter-spacing: 0.025em;
+}
+
+.support-copy-status {
+  font-family: inherit;
+  font-size: 0.75rem;
+  color: var(--midaway-teal);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  white-space: nowrap;
+}
+
+.support-iban:hover .support-copy-status,
+.support-iban:focus-visible .support-copy-status {
+  opacity: 1;
+}
+
+.support-iban:focus-visible {
+  outline: 2px solid var(--midaway-teal);
+  outline-offset: 6px;
+  border-radius: 2px;
 }
 
 @media (max-width: 768px) {
@@ -1952,5 +1989,24 @@ margin: 0 auto 14px;
     margin-top: 34px;
     padding: 28px 22px;
     border-radius: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .support-iban {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    text-align: center;
+  }
+
+  .support-iban-number {
+    font-size: 0.92rem;
+    overflow-wrap: anywhere;
+  }
+
+  .support-copy-status {
+    opacity: 1;
+    font-size: 0.72rem;
   }
 }

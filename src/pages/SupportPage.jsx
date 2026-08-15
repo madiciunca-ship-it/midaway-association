@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import Seo from "../components/Seo.jsx";
 
@@ -29,6 +30,9 @@ const supportContent = {
       eurLabel: "Cont EUR",
       eurIban: "RO40BTRLEURCRT0DG5517901",
 
+      copyIban: "Apasă pentru a copia",
+copiedIban: "Copiat!",
+
     sponsorshipTitle:
       "Sponsorizări și parteneriate",
 
@@ -45,7 +49,7 @@ const supportContent = {
       "Voluntariat",
 
     volunteerText:
-      "Midaway va avea nevoie și de oameni care vor să se implice în evenimente, documentare, fotografie și video, traduceri, proiecte editoriale, educație sau organizare.",
+      "Midaway va avea nevoie și de oameni care vor să se implice în evenimente, documentarea proiectelor, fotografie și video, traduceri, proiecte editoriale, educație sau organizare.",
 
     volunteerNote:
       "Dacă simți că experiența ta s-ar potrivi unui proiect Midaway, scrie-ne câteva rânduri despre tine.",
@@ -58,15 +62,15 @@ const supportContent = {
     eyebrow: "Support Midaway",
 
     title:
-      "Some stories need people who help them travel further.",
+      "Some stories need people to help them go further.",
 
     intro:
-      "Midaway Association develops editorial, cultural, educational and intercultural projects. You can support them through a donation, sponsorship, resources, time or expertise.",
+      "Midaway Association develops editorial, cultural, educational and intercultural projects. You can support them through donations and sponsorships, or by contributing resources, time or expertise.",
 
     donationTitle: "Donations",
 
     donationText:
-      "You can directly support Midaway Association projects by bank transfer. Every contribution helps us turn ideas into projects that reach people.",
+      "You can support Midaway Association projects directly by bank transfer. Every contribution helps us turn ideas into projects that reach people.",
 
       bankNameLabel: "Bank",
       bankName: "Banca Transilvania",
@@ -80,14 +84,17 @@ const supportContent = {
       eurLabel: "EUR account",
       eurIban: "RO40BTRLEURCRT0DG5517901",
 
+      copyIban: "Tap to copy",
+copiedIban: "Copied!",
+
     sponsorshipTitle:
       "Sponsorships and partnerships",
 
     sponsorshipText:
-      "Companies, organisations and institutions can support Midaway projects through sponsorships, resources or partnerships built around a specific project.",
+      "Companies, organisations and institutions can support Midaway projects through sponsorships, by contributing resources, or through partnerships built around specific projects.",
 
     sponsorshipNote:
-      "For documentation, sponsorship agreements and administrative details, write to us.",
+      "For documentation, sponsorship agreements or administrative details, get in touch with us.",
 
     sponsorshipCta:
       "Talk to us",
@@ -96,10 +103,10 @@ const supportContent = {
       "Volunteering",
 
     volunteerText:
-      "Midaway will also need people who want to get involved in events, documentation, photography and video, translation, editorial projects, education or organisation.",
+      "Midaway will also need people who want to get involved in events, project documentation, photography and video, translation, editorial projects, education or organisation.",
 
     volunteerNote:
-      "If you feel your experience could find a place in a Midaway project, tell us a little about yourself.",
+      "If you feel your experience could contribute to a Midaway project, tell us a little about yourself.",
 
     volunteerCta:
       "Write to us",
@@ -108,10 +115,24 @@ const supportContent = {
 
 function SupportPage() {
   const { lang = "ro" } = useParams();
+  const [copiedIban, setCopiedIban] = useState(null);
 
   const t =
     supportContent[lang] ||
     supportContent.ro;
+
+    const copyIban = async (iban) => {
+        try {
+          await navigator.clipboard.writeText(iban);
+          setCopiedIban(iban);
+    
+          setTimeout(() => {
+            setCopiedIban(null);
+          }, 1500);
+        } catch (error) {
+          console.error("IBAN could not be copied:", error);
+        }
+      };
 
   return (
     <>
@@ -173,18 +194,48 @@ function SupportPage() {
   </div>
 
   <div className="support-bank-row">
-    <span>{t.ronLabel}</span>
-    <strong className="support-iban">
-      {t.ronIban}
-    </strong>
-  </div>
+  <span>{t.ronLabel}</span>
 
-  <div className="support-bank-row">
-    <span>{t.eurLabel}</span>
-    <strong className="support-iban">
+  <button
+    type="button"
+    className="support-iban"
+    onClick={() => copyIban(t.ronIban)}
+    title={t.copyIban}
+    aria-label={`${t.copyIban}: ${t.ronIban}`}
+  >
+    <span className="support-iban-number">
+      {t.ronIban}
+    </span>
+
+    <span className="support-copy-status">
+      {copiedIban === t.ronIban
+        ? t.copiedIban
+        : t.copyIban}
+    </span>
+  </button>
+</div>
+
+<div className="support-bank-row">
+  <span>{t.eurLabel}</span>
+
+  <button
+    type="button"
+    className="support-iban"
+    onClick={() => copyIban(t.eurIban)}
+    title={t.copyIban}
+    aria-label={`${t.copyIban}: ${t.eurIban}`}
+  >
+    <span className="support-iban-number">
       {t.eurIban}
-    </strong>
-  </div>
+    </span>
+
+    <span className="support-copy-status">
+      {copiedIban === t.eurIban
+        ? t.copiedIban
+        : t.copyIban}
+    </span>
+  </button>
+</div>
 </div>
           </div>
         </section>
