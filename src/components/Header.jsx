@@ -58,6 +58,10 @@ function Header() {
 <a href={`/${lang}/contact`}>
   {lang === "ro" ? "Contact" : "Contact"}
 </a>
+
+<a href={`/${lang}/sustine`}>
+  {lang === "ro" ? "Susține" : "Support"}
+</a>
         </nav>
 
         <div className="header-actions">
@@ -126,6 +130,13 @@ function Header() {
   onClick={() => setMenuOpen(false)}
 >
   Contact
+</a>
+
+<a
+  href={`/${lang}/sustine`}
+  onClick={() => setMenuOpen(false)}
+>
+  {lang === "ro" ? "Susține" : "Support"}
 </a>
         </nav>
       )}

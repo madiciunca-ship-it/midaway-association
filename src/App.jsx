@@ -11,6 +11,7 @@ import ProjectsPage from "./pages/ProjectsPage.jsx";
 import GaudeamusPage from "./pages/GaudeamusPage.jsx";
 import PartnershipsPage from "./pages/PartnershipsPage.jsx";
 import ContactPage from "./pages/ContactPage.jsx";
+import SupportPage from "./pages/SupportPage.jsx";
 
 function App() {
   return (
@@ -53,6 +54,11 @@ function App() {
 <Route
   path="contact"
   element={<ContactPage />}
+/>
+
+<Route
+  path="sustine"
+  element={<SupportPage />}
 />
         </Route>
       </Routes>
