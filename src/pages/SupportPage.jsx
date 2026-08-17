@@ -31,7 +31,7 @@ const supportContent = {
       eurIban: "RO40BTRLEURCRT0DG5517901",
 
       copyIban: "Apasă pentru a copia",
-copiedIban: "Copiat!",
+      copiedIban: "IBAN copiat!",
 
     sponsorshipTitle:
       "Sponsorizări și parteneriate",
