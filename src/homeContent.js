@@ -8,7 +8,7 @@ export const homeContent = {
       intro:
         "Asociația Midaway creează punți între literatură, educație și comunități, transformând cărțile și poveștile în proiecte care pot circula între limbi, formate, oameni și culturi.",
   
-      cta: "Află mai multe",
+      cta: "Descoperă Midaway",
   
       whyTitle: "De ce există Midaway",
   
@@ -133,7 +133,7 @@ export const homeContent = {
          "Midaway Association builds bridges between literature, education, and communities, turning books and stories into projects that can travel across languages, formats, cultures, and communities.",
          
     
-        cta: "Learn more",
+         cta: "Discover Midaway",
     
         whyTitle: "Why Midaway exists",
     
